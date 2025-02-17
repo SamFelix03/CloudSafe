@@ -2,6 +2,8 @@
 
 CloudSafe is a decentralized application (DApp) that enables secure image storage and sharing using blockchain technology. It combines the power of Ethereum smart contracts for access control with IPFS for decentralized storage.
 
+<img width="1470" alt="Screenshot 2025-02-17 at 6 55 45 PM" src="https://github.com/user-attachments/assets/4b5d074b-8adb-4369-b801-e7c157de20bb" />
+
 
 ## 🌟 Features
 
@@ -39,45 +41,50 @@ CloudSafe is a decentralized application (DApp) that enables secure image storag
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+
+```bash
 git clone <repository-url>
 cd cloudsafe
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+   
+```bash
 # Install root dependencies
 npm install
 
 # Install client dependencies
 cd client
 npm install
-\`\`\`
+```
 
 3. Configure environment variables:
-Create a \`.env\` file in the client directory:
-\`\`\`env
+   
+Create a `.env` file in the client directory:
+
+```env
 REACT_APP_PINATA_API_KEY=your_pinata_api_key
 REACT_APP_PINATA_API_SECRET=your_pinata_secret_key
-\`\`\`
+```
 
-4. Start the local blockchain:
-\`\`\`bash
+5. Start the local blockchain:
+```bash
 # In the root directory
 npx hardhat node
-\`\`\`
+```
 
 5. Deploy the smart contract:
-\`\`\`bash
+```bash
 # In a new terminal
 npx hardhat run scripts/deploy.js --network localhost
-\`\`\`
+```
 
 6. Start the application:
-\`\`\`bash
+
+```bash
 # In the client directory
 npm start
-\`\`\`
+```
 
 ## 💡 Usage Guide
 
@@ -168,17 +175,7 @@ The application is fully responsive and works on:
    - Can be deployed to testnets/mainnet
    - Gas fees apply on public networks
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- OpenZeppelin for smart contract libraries
-- IPFS and Pinata for decentralized storage
-- Ethereum community for tools and support
-- Hardhat team for development framework
